@@ -26,39 +26,39 @@
 " Grays {{{
 
 if &background == "light"
-	let s:white = ["#f4f3ef", 231]
-	let s:black = ["#323434", 16]
+  let s:white = ["#f4f3ef", 231]
+  let s:black = ["#323434", 16]
 
-	let s:lightgray       = ["#eae8e1", 188]
-	let s:mediumlightgray = ["#e4e2d8", 188]
-	let s:mediumgray      = ["#7f7757", 101]
-	let s:mediumdarkgray  = ["#4f4a36", 52]
-	let s:darkgray        = ["#423e2e", 16]
+  let s:lightgray       = ["#eae8e1", 188]
+  let s:mediumlightgray = ["#e4e2d8", 188]
+  let s:mediumgray      = ["#7f7757", 101]
+  let s:mediumdarkgray  = ["#4f4a36", 52]
+  let s:darkgray        = ["#423e2e", 16]
 
-	let s:grayone=s:lightgray
-	let s:graytwo=s:mediumlightgray
-	let s:graythree=s:mediumdarkgray
-	let s:grayfour=s:mediumdarkgray
+  let s:grayone=s:lightgray
+  let s:graytwo=s:mediumlightgray
+  let s:graythree=s:mediumdarkgray
+  let s:grayfour=s:mediumdarkgray
 
-	let s:fg=s:black
-	let s:bg=s:white
+  let s:fg=s:black
+  let s:bg=s:white
 else " &background == 'dark'
-	let s:white = ["#c3d2df", 188]
-	let s:black = ["#17222b", 16]
+  let s:white = ["#c3d2df", 188]
+  let s:black = ["#17222b", 16]
 
-	let s:lightgray       = ["#b9cbda", 152]
-	let s:mediumlightgray = ["#acc1d3", 146]
-	let s:mediumgray      = ["#547d9c", 67]
-	let s:mediumdarkgray  = ["#253846", 16]
-	let s:darkgray        = ["#1e2d38", 16]
+  let s:lightgray       = ["#b9cbda", 152]
+  let s:mediumlightgray = ["#acc1d3", 146]
+  let s:mediumgray      = ["#547d9c", 67]
+  let s:mediumdarkgray  = ["#253846", 16]
+  let s:darkgray        = ["#1e2d38", 16]
 
-	let s:grayone=s:darkgray
-	let s:graytwo=s:mediumdarkgray
-	let s:graythree=s:mediumlightgray
-	let s:grayfour=s:lightgray
+  let s:grayone=s:darkgray
+  let s:graytwo=s:mediumdarkgray
+  let s:graythree=s:mediumlightgray
+  let s:grayfour=s:lightgray
 
-	let s:fg=s:white
-	let s:bg=s:black
+  let s:fg=s:white
+  let s:bg=s:black
 endif
 
 let s:graymid=s:mediumgray
@@ -69,56 +69,56 @@ let s:graymid=s:mediumgray
 
 " Terminal Colors {{{
 if has('nvim')
-	let g:terminal_color_1  = "#D12D00"
-	let g:terminal_color_2  = "#427B00"
-	let g:terminal_color_3  = "#B68200"
-	let g:terminal_color_4  = "#006fd1"
-	let g:terminal_color_5  = "#a53bce"
-	let g:terminal_color_6  = "#119c97"
-	let g:terminal_color_9  = "#E74D23"
-	let g:terminal_color_10 = "#7dc030"
-	let g:terminal_color_11 = "#ffc233"
-	let g:terminal_color_12 = "#5aa2e0"
-	let g:terminal_color_13 = "#b968d9"
-	let g:terminal_color_14 = "#15c1bb"
+  let g:terminal_color_1  = "#D12D00"
+  let g:terminal_color_2  = "#427B00"
+  let g:terminal_color_3  = "#B68200"
+  let g:terminal_color_4  = "#006fd1"
+  let g:terminal_color_5  = "#a53bce"
+  let g:terminal_color_6  = "#119c97"
+  let g:terminal_color_9  = "#E74D23"
+  let g:terminal_color_10 = "#7dc030"
+  let g:terminal_color_11 = "#ffc233"
+  let g:terminal_color_12 = "#5aa2e0"
+  let g:terminal_color_13 = "#b968d9"
+  let g:terminal_color_14 = "#15c1bb"
 
-	if &background == "light"
-		let g:terminal_color_0  = "#323434"
-		let g:terminal_color_7  = "#e4e2d8"
-		let g:terminal_color_8  = "#4f4a36"
-		let g:terminal_color_15 = "#f4f3ef"
-	else " &background == 'dark'
-		let g:terminal_color_0  = "#1e2d38"
-		let g:terminal_color_7  = "#acc1d3"
-		let g:terminal_color_8  = "#253846"
-		let g:terminal_color_15 = "#b9cbda"
-	endif
+  if &background == "light"
+    let g:terminal_color_0  = "#323434"
+    let g:terminal_color_7  = "#e4e2d8"
+    let g:terminal_color_8  = "#4f4a36"
+    let g:terminal_color_15 = "#f4f3ef"
+  else " &background == 'dark'
+    let g:terminal_color_0  = "#1e2d38"
+    let g:terminal_color_7  = "#acc1d3"
+    let g:terminal_color_8  = "#253846"
+    let g:terminal_color_15 = "#b9cbda"
+  endif
 else
-	let g:terminal_ansi_colors = repeat([0], 16)
-	let g:terminal_ansi_colors[1]  = "#D12D00"
-	let g:terminal_ansi_colors[2]  = "#427B00"
-	let g:terminal_ansi_colors[3]  = "#B68200"
-	let g:terminal_ansi_colors[4]  = "#006fd1"
-	let g:terminal_ansi_colors[5]  = "#a53bce"
-	let g:terminal_ansi_colors[6]  = "#119c97"
-	let g:terminal_ansi_colors[9]  = "#E74D23"
-	let g:terminal_ansi_colors[10] = "#7dc030"
-	let g:terminal_ansi_colors[11] = "#ffc233"
-	let g:terminal_ansi_colors[12] = "#5aa2e0"
-	let g:terminal_ansi_colors[13] = "#b968d9"
-	let g:terminal_ansi_colors[14] = "#15c1bb"
+  let g:terminal_ansi_colors = repeat([0], 16)
+  let g:terminal_ansi_colors[1]  = "#D12D00"
+  let g:terminal_ansi_colors[2]  = "#427B00"
+  let g:terminal_ansi_colors[3]  = "#B68200"
+  let g:terminal_ansi_colors[4]  = "#006fd1"
+  let g:terminal_ansi_colors[5]  = "#a53bce"
+  let g:terminal_ansi_colors[6]  = "#119c97"
+  let g:terminal_ansi_colors[9]  = "#E74D23"
+  let g:terminal_ansi_colors[10] = "#7dc030"
+  let g:terminal_ansi_colors[11] = "#ffc233"
+  let g:terminal_ansi_colors[12] = "#5aa2e0"
+  let g:terminal_ansi_colors[13] = "#b968d9"
+  let g:terminal_ansi_colors[14] = "#15c1bb"
 
-	if &background == "light"
-		let g:terminal_ansi_colors[0]  = "#323434"
-		let g:terminal_ansi_colors[7]  = "#e4e2d8"
-		let g:terminal_ansi_colors[8]  = "#4f4a36"
-		let g:terminal_ansi_colors[15] = "#f4f3ef"
-	else " &background == 'dark'
-		let g:terminal_ansi_colors[0]  = "#1e2d38"
-		let g:terminal_ansi_colors[7]  = "#acc1d3"
-		let g:terminal_ansi_colors[8]  = "#253846"
-		let g:terminal_ansi_colors[15] = "#b9cbda"
-	endif
+  if &background == "light"
+    let g:terminal_ansi_colors[0]  = "#323434"
+    let g:terminal_ansi_colors[7]  = "#e4e2d8"
+    let g:terminal_ansi_colors[8]  = "#4f4a36"
+    let g:terminal_ansi_colors[15] = "#f4f3ef"
+  else " &background == 'dark'
+    let g:terminal_ansi_colors[0]  = "#1e2d38"
+    let g:terminal_ansi_colors[7]  = "#acc1d3"
+    let g:terminal_ansi_colors[8]  = "#253846"
+    let g:terminal_ansi_colors[15] = "#b9cbda"
+  endif
 endif
 " }}}
 
@@ -150,19 +150,19 @@ let s:truemagenta = s:magenta
 let s:truecyan    = s:cyan
 
 if &background == "light"
-	let s:constant   = s:red
-	let s:identifier = s:yellow
-	let s:statement  = s:blue
-	let s:preproc    = s:magenta
-	let s:type       = s:green
-	let s:special    = s:cyan
+  let s:constant   = s:red
+  let s:identifier = s:yellow
+  let s:statement  = s:blue
+  let s:preproc    = s:magenta
+  let s:type       = s:green
+  let s:special    = s:cyan
 else " &background == 'dark'
-	let s:constant   = s:red
-	let s:identifier = s:yellow
-	let s:statement  = s:cyan
-	let s:preproc    = s:magenta
-	let s:special    = s:green
-	let s:type       = s:blue
+  let s:constant   = s:red
+  let s:identifier = s:yellow
+  let s:statement  = s:cyan
+  let s:preproc    = s:magenta
+  let s:special    = s:green
+  let s:type       = s:blue
 endif
 
 let s:none = ["NONE", "NONE"]
@@ -183,7 +183,7 @@ syntax on
 let g:colors_name = "toast"
 
 if exists("syntax_on")
-	syntax reset
+  syntax reset
 endif
 
 " }}}
@@ -191,15 +191,15 @@ endif
 " Highlight shorthand {{{
 " From chriskempson/vim-tomorrow-theme
 function! s:hl(...)
-	if len(a:000) > 1 && len(a:2) > 0
-		exec "hi " . a:1 . " guifg=" . a:2[0] . " ctermfg=" . a:2[1]
-	endif
-	if len(a:000) > 2 && len(a:3) > 0
-		exec "hi " . a:1 . " guibg=" . a:3[0] . " ctermbg=" . a:3[1]
-	endif
-	if len(a:000) > 3 && a:4 != ""
-		exec "hi " . a:1 . " gui=" . a:4 . " cterm=" . a:4
-	endif
+  if len(a:000) > 1 && len(a:2) > 0
+    exec "hi " . a:1 . " guifg=" . a:2[0] . " ctermfg=" . a:2[1]
+  endif
+  if len(a:000) > 2 && len(a:3) > 0
+    exec "hi " . a:1 . " guibg=" . a:3[0] . " ctermbg=" . a:3[1]
+  endif
+  if len(a:000) > 3 && a:4 != ""
+    exec "hi " . a:1 . " gui=" . a:4 . " cterm=" . a:4
+  endif
 endfunction
 " }}}
 
@@ -307,4 +307,4 @@ hi link Debug Special
 
 " End Group Names }}}
 
-" ex: set tabstop=2 noexpandtab nolist foldmethod=marker:
+" ex: set tabstop=2 expandtab nolist foldmethod=marker:
