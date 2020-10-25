@@ -23,7 +23,7 @@ easier and to aim for some degree of theoretical color harmony.
 Much of the basis for this code and approach comes from Chris Kempson's
 venerable Tomorrow theme.
 
-# Customization
+## Customization
 
 Set up autocmd overrides to change the colors to your liking. For instance, if
 you don't want red to be used for constants and strings, you can link them to a
@@ -46,11 +46,11 @@ augroup toast
 augroup END
 ```
 
-# Et cetera
+## Et cetera
 
 The font used in the screenshots is [IBM Plex Mono](https://github.com/IBM/plex).
 
-# License
+## License
 
 Copyright (c) Jay Sitter. Distributed under the same terms as Vim itself. See
 :help license.

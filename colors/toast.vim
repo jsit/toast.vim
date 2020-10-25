@@ -1,8 +1,8 @@
 " Vim color file Toast
 " Maintainer: [jsit] <jay@jaysitter.com>
-" Last Change: 2020 Oct 24
+" Last Change: 2020 Oct 25
 " URL: https://github.com/jsit/toast.vim
-" Version: 0.2.1
+" Version: 0.2.2
 " Description: Toast! A colorful, medium-contrast theme with full Vim and Neovim
 " support, true color and 256-color support, and automatic light and dark
 " variants. Easy to read without frying your retinae.
@@ -257,6 +257,8 @@ call s:hl("TabLineFill", s:grayone, s:grayone)
 exec "hi TabLineSel gui='NONE'"
 call s:hl("Title", s:magenta)
 call s:hl("Todo", s:yellow, s:none, "reverse,italic")
+call s:hl("ToolbarButton", s:fg, s:graythree, "NONE")
+call s:hl("ToolbarLine", "", s:grayone)
 exec "hi Underlined gui='underline'"
 call s:hl("Visual", [], s:graytwo)
 call s:hl("VisualNOS", s:graytwo)
