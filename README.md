@@ -32,7 +32,17 @@ different highlight group with something like this in your `.vimrc` (Vim) or
 
 ```vim
 augroup toast
-	autocmd colorscheme toast hi clear Constant | hi link Constant Type
+  autocmd colorscheme toast hi clear Constant | hi link Constant Type
+augroup END
+```
+
+To disable italics:
+
+```vim
+augroup toast
+  autocmd colorscheme toast hi Comment cterm=NONE gui=NONE
+  autocmd colorscheme toast hi Folded cterm=NONE gui=NONE
+  autocmd colorscheme toast hi Todo cterm=reverse gui=reverse
 augroup END
 ```
 
