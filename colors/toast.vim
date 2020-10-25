@@ -2,7 +2,7 @@
 " Maintainer: [jsit] <jay@jaysitter.com>
 " Last Change: 2020 Oct 24
 " URL: https://github.com/jsit/toast.vim
-" Version: 0.2
+" Version: 0.2.1
 " Description: Toast! A colorful, medium-contrast theme with full Vim and Neovim
 " support, true color and 256-color support, and automatic light and dark
 " variants. Easy to read without frying your retinae.
@@ -267,7 +267,7 @@ call s:hl("WildMenu", s:green, s:grayone)
 
 " Group Names (:h group-name) {{{
 
-exec s:hl("Comment", s:graymid)
+exec s:hl("Comment", s:graymid, "", "italic")
 
 exec s:hl("Constant", s:constant)
 hi link String Constant
