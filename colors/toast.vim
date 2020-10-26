@@ -1,8 +1,8 @@
 " Vim color file Toast
 " Maintainer: [jsit] <jay@jaysitter.com>
-" Last Change: 2020 Oct 25
+" Last Change: 2020 Oct 26
 " URL: https://github.com/jsit/toast.vim
-" Version: 0.2.2
+" Version: 0.2.3
 " Description: Toast! A colorful, medium-contrast theme with full Vim and Neovim
 " support, true color and 256-color support, and automatic light and dark
 " variants. Easy to read without frying your retinae.
@@ -220,7 +220,7 @@ call s:hl("DiffText", s:magenta, s:white, "reverse")
 exec "hi link EndOfBuffer NonText"
 call s:hl("ErrorMsg", s:white, s:truered)
 call s:hl("VertSplit", s:bg, s:graytwo, "reverse")
-call s:hl("Folded", s:none, s:grayone, "italic")
+call s:hl("Folded", s:none, s:grayone)
 call s:hl("FoldColumn", s:yellow, s:bg)
 call s:hl("SignColumn", s:none, s:bg)
 call s:hl("IncSearch", s:trueyellow, s:black, "reverse")
@@ -256,7 +256,7 @@ call s:hl("TabLine", s:graymid, s:grayone)
 call s:hl("TabLineFill", s:grayone, s:grayone)
 exec "hi TabLineSel gui='NONE'"
 call s:hl("Title", s:magenta)
-call s:hl("Todo", s:yellow, s:none, "reverse,italic")
+call s:hl("Todo", s:yellow, s:none, "reverse")
 call s:hl("ToolbarButton", s:fg, s:graythree, "NONE")
 call s:hl("ToolbarLine", "", s:grayone)
 exec "hi Underlined gui='underline'"
@@ -269,7 +269,7 @@ call s:hl("WildMenu", s:green, s:grayone)
 
 " Group Names (:h group-name) {{{
 
-exec s:hl("Comment", s:graymid, "", "italic")
+exec s:hl("Comment", s:graymid, "")
 
 exec s:hl("Constant", s:constant)
 hi link String Constant
