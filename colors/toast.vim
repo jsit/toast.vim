@@ -2,7 +2,7 @@
 " Maintainer: [jsit] <jay@jaysitter.com>
 " Last Change: 2020 Oct 26
 " URL: https://github.com/jsit/toast.vim
-" Version: 0.2.3
+" Version: 0.2.4
 " Description: Toast! A colorful, medium-contrast theme with full Vim and Neovim
 " support, true color and 256-color support, and automatic light and dark
 " variants. Easy to read without frying your retinae.
@@ -44,13 +44,13 @@ if &background == "light"
   let s:bg=s:white
 else " &background == 'dark'
   let s:white = ["#c3d2df", 188]
-  let s:black = ["#17222b", 16]
+  let s:black = ["#17222b", 234]
 
   let s:lightgray       = ["#b9cbda", 152]
   let s:mediumlightgray = ["#acc1d3", 146]
-  let s:mediumgray      = ["#547d9c", 67]
-  let s:mediumdarkgray  = ["#253846", 16]
-  let s:darkgray        = ["#1e2d38", 16]
+  let s:mediumgray      = ["#547d9c", 242]
+  let s:mediumdarkgray  = ["#253846", 236]
+  let s:darkgray        = ["#1e2d38", 235]
 
   let s:grayone=s:darkgray
   let s:graytwo=s:mediumdarkgray
