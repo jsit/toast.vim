@@ -20,10 +20,32 @@ easier and to aim for some degree of theoretical color harmony.
 - Within these parameters, saturation and luminance levels are chosen based on
   what I think looks good while dogfooding the themes.
 
+See something that looks wrong or that you don't like? [File an
+issue!](https://github.com/jsit/toast.vim/issues)
+
 Much of the basis for this code and approach comes from Chris Kempson's
 venerable Tomorrow theme.
 
 ## Customization
+
+To use the light version:
+
+```vim
+set background=light
+colorscheme toast
+```
+To use the dark version:
+
+```vim
+set background=dark
+colorscheme toast
+```
+
+If your terminal emulator and version of Vim support true color:
+
+```vim
+set termguicolors
+```
 
 Set up autocmd overrides to change the colors to your liking. For instance, if
 you don't want red to be used for constants and strings, you can link them to a
