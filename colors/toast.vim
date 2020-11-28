@@ -269,19 +269,19 @@ call s:hl("WildMenu", s:green, s:grayone)
 
 " Group Names (:h group-name) {{{
 
-exec s:hl("Comment", s:graymid, "")
+call s:hl("Comment", s:graymid, "")
 
-exec s:hl("Constant", s:constant)
+call s:hl("Constant", s:constant)
 hi link String Constant
 hi link Character Constant
 hi link Number Constant
 hi link Boolean Constant
 hi link Float Constant
 
-exec s:hl("Identifier", s:identifier, [], "NONE")
+call s:hl("Identifier", s:identifier, [], "NONE")
 hi link Function Identifier
 
-exec s:hl("Statement", s:statement, "", "NONE")
+call s:hl("Statement", s:statement, "", "NONE")
 hi link Conditional Statement
 hi link Repeat Statement
 hi link Label Statement
@@ -289,18 +289,18 @@ hi link Operator Statement
 hi link Keyword Statement
 hi link Exception Statement
 
-exec s:hl("PreProc", s:preproc)
+call s:hl("PreProc", s:preproc)
 hi link Include PreProc
 hi link Define PreProc
 hi link Macro PreProc
 hi link PreCondit PreProc
 
-exec s:hl("Type", s:type, "", "NONE")
+call s:hl("Type", s:type, "", "NONE")
 hi link StorageClass Type
 hi link Structure Type
 hi link Typedef Type
 
-exec s:hl("Special", s:special)
+call s:hl("Special", s:special)
 hi link SpecialChar Special
 hi link Tag Special
 hi link Delimiter Special
