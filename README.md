@@ -26,6 +26,22 @@ issue!](https://github.com/jsit/toast.vim/issues)
 Much of the basis for this code and approach comes from Chris Kempson's
 venerable Tomorrow theme.
 
+## Installation
+
+Vim:
+
+```sh
+mkdir -p ~/.vim/colors
+curl -o ~/.vim/colors/toast.vim https://raw.githubusercontent.com/jsit/toast.vim/master/colors/toast.vim
+```
+
+Neovim:
+
+```sh
+mkdir -p ~/.config/nvim/colors
+curl -o ~/.config/nvim/colors/toast.vim https://raw.githubusercontent.com/jsit/toast.vim/master/colors/toast.vim
+```
+
 ## Customization
 
 To use the light version:
