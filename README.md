@@ -91,22 +91,22 @@ augroup END
 
 <tr>
   <td>Normal</td>
-  <td style="background-color: #d12d00; color: #fff;">#d12d00</td>
-  <td style="background-color: #427b00; color: #fff;">#427b00</td>
-  <td style="background-color: #b68200;">#b68200</td>
-  <td style="background-color: #006fd1; color: #fff;">#006fd1</td>
-  <td style="background-color: #a53bce; color: #fff;">#a53bce</td>
-  <td style="background-color: #119c97; color: #fff;">#119c97</td>
+  <td bgColor="#d12d00" style="background-color: #d12d00; color: #fff;">#d12d00</td>
+  <td bgColor="#427b00" style="background-color: #427b00; color: #fff;">#427b00</td>
+  <td bgColor="#b68200" style="background-color: #b68200;">#b68200</td>
+  <td bgColor="#006fd1" style="background-color: #006fd1; color: #fff;">#006fd1</td>
+  <td bgColor="#a53bce" style="background-color: #a53bce; color: #fff;">#a53bce</td>
+  <td bgColor="#119c97" style="background-color: #119c97; color: #fff;">#119c97</td>
 </tr>
 
 <tr>
   <td>Bright</td>
-  <td style="background-color: #e74d23; color: #fff;">#e74d23</td>
-  <td style="background-color: #7dc030;">#7dc030</td>
-  <td style="background-color: #ffc233;">#ffc233</td>
-  <td style="background-color: #5aa2e0;">#5aa2e0</td>
-  <td style="background-color: #b968d9;">#b968d9</td>
-  <td style="background-color: #15c1bb;">#15c1bb</td>
+  <td bgColor="#e74d23" style="background-color: #e74d23; color: #fff;">#e74d23</td>
+  <td bgColor="#7dc030" style="background-color: #7dc030;">#7dc030</td>
+  <td bgColor="#ffc233" style="background-color: #ffc233;">#ffc233</td>
+  <td bgColor="#5aa2e0" style="background-color: #5aa2e0;">#5aa2e0</td>
+  <td bgColor="#b968d9" style="background-color: #b968d9;">#b968d9</td>
+  <td bgColor="#15c1bb" style="background-color: #15c1bb;">#15c1bb</td>
 </tr>
 </table>
 
@@ -115,23 +115,23 @@ augroup END
 <table>
 <tr>
   <td>Light Background</td>
-  <td style="background-color: #f4f3ef;">#f4f3ef</td>
-  <td style="background-color: #eae8e1;">#eae8e1</td>
-  <td style="background-color: #e4e2d8;">#e4e2d8</td>
-  <td style="background-color: #7f7757; color: #fff;">#7f7757</td>
-  <td style="background-color: #4f4a36; color: #fff;">#4f4a36</td>
-  <td style="background-color: #423e2e; color: #fff;">#423e2e</td>
-  <td style="background-color: #323434; color: #fff;">#323434</td>
+  <td bgColor="#f4f3ef" style="background-color: #f4f3ef;">#f4f3ef</td>
+  <td bgColor="#eae8e1" style="background-color: #eae8e1;">#eae8e1</td>
+  <td bgColor="#e4e2d8" style="background-color: #e4e2d8;">#e4e2d8</td>
+  <td bgColor="#7f7757" style="background-color: #7f7757; color: #fff;">#7f7757</td>
+  <td bgColor="#4f4a36" style="background-color: #4f4a36; color: #fff;">#4f4a36</td>
+  <td bgColor="#423e2e" style="background-color: #423e2e; color: #fff;">#423e2e</td>
+  <td bgColor="#323434" style="background-color: #323434; color: #fff;">#323434</td>
 </tr>
 <tr>
   <td>Dark Background</td>
-  <td style="background-color: #c3d2df;">#c3d2df</td>
-  <td style="background-color: #b9cbda;">#b9cbda</td>
-  <td style="background-color: #acc1d3;">#acc1d3</td>
-  <td style="background-color: #547d9c; color: #fff;">#547d9c</td>
-  <td style="background-color: #253846; color: #fff;">#253846</td>
-  <td style="background-color: #1e2d38; color: #fff;">#1e2d38</td>
-  <td style="background-color: #17222b; color: #fff;">#17222b</td>
+  <td bgColor="#c3d2df" style="background-color: #c3d2df;">#c3d2df</td>
+  <td bgColor="#b9cbda" style="background-color: #b9cbda;">#b9cbda</td>
+  <td bgColor="#acc1d3" style="background-color: #acc1d3;">#acc1d3</td>
+  <td bgColor="#547d9c" style="background-color: #547d9c; color: #fff;">#547d9c</td>
+  <td bgColor="#253846" style="background-color: #253846; color: #fff;">#253846</td>
+  <td bgColor="#1e2d38" style="background-color: #1e2d38; color: #fff;">#1e2d38</td>
+  <td bgColor="#17222b" style="background-color: #17222b; color: #fff;">#17222b</td>
 </tr>
 </table>
 
