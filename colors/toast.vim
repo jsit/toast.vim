@@ -279,7 +279,7 @@ call s:hl("StatusLineTerm", s:green, s:none, "reverse")
 call s:hl("StatusLineTermNC", s:green, s:none, "reverse")
 call s:hl("TabLine", s:graymid, s:grayone)
 call s:hl("TabLineFill", s:grayone, s:grayone)
-exec "hi TabLineSel gui='NONE'"
+call s:hl("TabLineSel", s:fg, s:bg, "NONE")
 call s:hl("Title", s:magenta)
 call s:hl("Todo", s:yellow, s:none, "reverse")
 call s:hl("ToolbarButton", s:fg, s:graythree, "NONE")
