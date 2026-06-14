@@ -25,15 +25,31 @@
 
 " Grays {{{
 
-if &background == "light"
-  let s:white = ["#f4f3ef", 231]
-  let s:black = ["#323434", 16]
+let s:lightwhitehex           = "#f4f3ef"
+let s:lightlightgrayhex       = "#eae8e1"
+let s:lightmediumlightgrayhex = "#e4e2d8"
+let s:lightmediumgrayhex      = "#7f7757"
+let s:lightmediumdarkgrayhex  = "#4f4a36"
+let s:lightdarkgrayhex        = "#423e2e"
+let s:lightblackhex           = "#323434"
 
-  let s:lightgray       = ["#eae8e1", 188]
-  let s:mediumlightgray = ["#e4e2d8", 188]
-  let s:mediumgray      = ["#7f7757", 101]
-  let s:mediumdarkgray  = ["#4f4a36", 52]
-  let s:darkgray        = ["#423e2e", 16]
+let s:darkwhitehex            = "#c3d2df"
+let s:darklightgrayhex        = "#b9cbda"
+let s:darkmediumlightgrayhex  = "#acc1d3"
+let s:darkmediumgrayhex       = "#547d9c"
+let s:darkmediumdarkgrayhex   = "#253846"
+let s:darkdarkgrayhex         = "#1e2d38"
+let s:darkblackhex            = "#17222b"
+
+if &background == "light"
+  let s:white = [s:lightwhitehex, 231]
+  let s:black = [s:lightblackhex, 16]
+
+  let s:lightgray       = [s:lightlightgrayhex, 188]
+  let s:mediumlightgray = [s:lightmediumlightgrayhex, 188]
+  let s:mediumgray      = [s:lightmediumgrayhex, 101]
+  let s:mediumdarkgray  = [s:lightmediumdarkgrayhex, 52]
+  let s:darkgray        = [s:lightdarkgrayhex, 16]
 
   let s:grayone=s:lightgray
   let s:graytwo=s:mediumlightgray
@@ -43,14 +59,14 @@ if &background == "light"
   let s:fg=s:black
   let s:bg=s:white
 else " &background == 'dark'
-  let s:white = ["#c3d2df", 188]
-  let s:black = ["#17222b", 234]
+  let s:white = [s:darkwhitehex, 188]
+  let s:black = [s:darkblackhex, 234]
 
-  let s:lightgray       = ["#b9cbda", 152]
-  let s:mediumlightgray = ["#acc1d3", 146]
-  let s:mediumgray      = ["#547d9c", 242]
-  let s:mediumdarkgray  = ["#253846", 236]
-  let s:darkgray        = ["#1e2d38", 235]
+  let s:lightgray       = [s:darklightgrayhex, 152]
+  let s:mediumlightgray = [s:darkmediumlightgrayhex, 146]
+  let s:mediumgray      = [s:darkmediumgrayhex, 242]
+  let s:mediumdarkgray  = [s:darkmediumdarkgrayhex, 236]
+  let s:darkgray        = [s:darkdarkgrayhex, 235]
 
   let s:grayone=s:darkgray
   let s:graytwo=s:mediumdarkgray
@@ -96,15 +112,15 @@ if has('nvim')
   let g:terminal_color_14 = s:lightcyanhex
 
   if &background == "light"
-    let g:terminal_color_0  = "#323434"
-    let g:terminal_color_7  = "#e4e2d8"
-    let g:terminal_color_8  = "#4f4a36"
-    let g:terminal_color_15 = "#f4f3ef"
+    let g:terminal_color_0  = s:lightblackhex
+    let g:terminal_color_7  = s:lightmediumlightgrayhex
+    let g:terminal_color_8  = s:lightmediumdarkgrayhex
+    let g:terminal_color_15 = s:lightwhitehex
   else " &background == 'dark'
-    let g:terminal_color_0  = "#1e2d38"
-    let g:terminal_color_7  = "#acc1d3"
-    let g:terminal_color_8  = "#253846"
-    let g:terminal_color_15 = "#b9cbda"
+    let g:terminal_color_0  = s:darkdarkgrayhex
+    let g:terminal_color_7  = s:darkmediumlightgrayhex
+    let g:terminal_color_8  = s:darkmediumdarkgrayhex
+    let g:terminal_color_15 = s:darklightgrayhex
   endif
 else
   let g:terminal_ansi_colors = repeat([0], 16)
