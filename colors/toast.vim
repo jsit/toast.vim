@@ -149,31 +149,31 @@ let s:lightmagenta = [s:lightmagentahex, 134]
 let s:lightred     = [s:lightredhex, 166]
 
 if &background == "light"
-  let s:yellow  = s:darkyellow 
-  let s:green   = s:darkgreen  
-  let s:cyan    = s:darkcyan   
-  let s:blue    = s:darkblue   
+  let s:yellow  = s:darkyellow
+  let s:green   = s:darkgreen
+  let s:cyan    = s:darkcyan
+  let s:blue    = s:darkblue
   let s:magenta = s:darkmagenta
-  let s:red     = s:darkred    
-  let s:altyellow  = s:lightyellow  
-  let s:altgreen   = s:lightgreen   
-  let s:altcyan    = s:lightcyan    
-  let s:altblue    = s:lightblue    
-  let s:altmagenta = s:lightmagenta 
-  let s:altred     = s:lightred     
+  let s:red     = s:darkred
+  let s:altyellow  = s:lightyellow
+  let s:altgreen   = s:lightgreen
+  let s:altcyan    = s:lightcyan
+  let s:altblue    = s:lightblue
+  let s:altmagenta = s:lightmagenta
+  let s:altred     = s:lightred
 else " &background == 'dark'
-  let s:yellow  = s:lightyellow 
-  let s:green   = s:lightgreen  
-  let s:cyan    = s:lightcyan   
-  let s:blue    = s:lightblue   
+  let s:yellow  = s:lightyellow
+  let s:green   = s:lightgreen
+  let s:cyan    = s:lightcyan
+  let s:blue    = s:lightblue
   let s:magenta = s:lightmagenta
-  let s:red     = s:lightred    
-  let s:altyellow  = s:darkyellow  
-  let s:altgreen   = s:darkgreen   
-  let s:altcyan    = s:darkcyan    
-  let s:altblue    = s:darkblue    
-  let s:altmagenta = s:darkmagenta 
-  let s:altred     = s:darkred     
+  let s:red     = s:lightred
+  let s:altyellow  = s:darkyellow
+  let s:altgreen   = s:darkgreen
+  let s:altcyan    = s:darkcyan
+  let s:altblue    = s:darkblue
+  let s:altmagenta = s:darkmagenta
+  let s:altred     = s:darkred
 endif
 
 " }}}
