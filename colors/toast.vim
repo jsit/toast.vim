@@ -67,20 +67,33 @@ let s:graymid=s:mediumgray
 
 " Colors {{{
 
+let s:darkredhex     = "#D12D00"
+let s:darkyellowhex  = "#B68200"
+let s:darkgreenhex   = "#427B00"
+let s:darkbluehex    = "#006fd1"
+let s:darkmagentahex = "#a53bce"
+let s:darkcyanhex    = "#119c97"
+let s:lightredhex     = "#E74D23"
+let s:lightyellowhex  = "#ffc233"
+let s:lightgreenhex   = "#7dc030"
+let s:lightbluehex    = "#5aa2e0"
+let s:lightmagentahex = "#b968d9"
+let s:lightcyanhex    = "#15c1bb"
+
 " Terminal Colors {{{
 if has('nvim')
-  let g:terminal_color_1  = "#D12D00"
-  let g:terminal_color_2  = "#427B00"
-  let g:terminal_color_3  = "#B68200"
-  let g:terminal_color_4  = "#006fd1"
-  let g:terminal_color_5  = "#a53bce"
-  let g:terminal_color_6  = "#119c97"
-  let g:terminal_color_9  = "#E74D23"
-  let g:terminal_color_10 = "#7dc030"
-  let g:terminal_color_11 = "#ffc233"
-  let g:terminal_color_12 = "#5aa2e0"
-  let g:terminal_color_13 = "#b968d9"
-  let g:terminal_color_14 = "#15c1bb"
+  let g:terminal_color_1  = s:darkredhex
+  let g:terminal_color_2  = s:darkgreenhex
+  let g:terminal_color_3  = s:darkyellowhex
+  let g:terminal_color_4  = s:darkbluehex
+  let g:terminal_color_5  = s:darkmagentahex
+  let g:terminal_color_6  = s:darkcyanhex
+  let g:terminal_color_9  = s:lightredhex
+  let g:terminal_color_10 = s:lightgreenhex
+  let g:terminal_color_11 = s:lightyellowhex
+  let g:terminal_color_12 = s:lightbluehex
+  let g:terminal_color_13 = s:lightmagentahex
+  let g:terminal_color_14 = s:lightcyanhex
 
   if &background == "light"
     let g:terminal_color_0  = "#323434"
@@ -95,18 +108,18 @@ if has('nvim')
   endif
 else
   let g:terminal_ansi_colors = repeat([0], 16)
-  let g:terminal_ansi_colors[1]  = "#D12D00"
-  let g:terminal_ansi_colors[2]  = "#427B00"
-  let g:terminal_ansi_colors[3]  = "#B68200"
-  let g:terminal_ansi_colors[4]  = "#006fd1"
-  let g:terminal_ansi_colors[5]  = "#a53bce"
-  let g:terminal_ansi_colors[6]  = "#119c97"
-  let g:terminal_ansi_colors[9]  = "#E74D23"
-  let g:terminal_ansi_colors[10] = "#7dc030"
-  let g:terminal_ansi_colors[11] = "#ffc233"
-  let g:terminal_ansi_colors[12] = "#5aa2e0"
-  let g:terminal_ansi_colors[13] = "#b968d9"
-  let g:terminal_ansi_colors[14] = "#15c1bb"
+  let g:terminal_ansi_colors[1]  = s:darkredhex
+  let g:terminal_ansi_colors[2]  = s:darkgreenhex
+  let g:terminal_ansi_colors[3]  = s:darkyellowhex
+  let g:terminal_ansi_colors[4]  = s:darkbluehex
+  let g:terminal_ansi_colors[5]  = s:darkmagentahex
+  let g:terminal_ansi_colors[6]  = s:darkcyanhex
+  let g:terminal_ansi_colors[9]  = s:lightredhex
+  let g:terminal_ansi_colors[10] = s:lightgreenhex
+  let g:terminal_ansi_colors[11] = s:lightyellowhex
+  let g:terminal_ansi_colors[12] = s:lightbluehex
+  let g:terminal_ansi_colors[13] = s:lightmagentahex
+  let g:terminal_ansi_colors[14] = s:lightcyanhex
 
   if &background == "light"
     let g:terminal_ansi_colors[0]  = "#323434"
@@ -122,18 +135,18 @@ else
 endif
 " }}}
 
-let s:darkyellow  = ["#B68200", 136]
-let s:darkgreen   = ["#427B00", 28]
-let s:darkcyan    = ["#119c97", 36]
-let s:darkblue    = ["#006fd1", 26]
-let s:darkmagenta = ["#a53bce", 128]
-let s:darkred     = ["#D12D00", 160]
-let s:lightyellow  = ["#ffc233", 214]
-let s:lightgreen   = ["#7dc030", 106]
-let s:lightcyan    = ["#15c1bb", 37]
-let s:lightblue    = ["#5aa2e0", 74]
-let s:lightmagenta = ["#b968d9", 134]
-let s:lightred     = ["#E74D23", 166]
+let s:darkyellow  = [s:darkyellowhex, 136]
+let s:darkgreen   = [s:darkgreenhex, 28]
+let s:darkcyan    = [s:darkcyanhex, 36]
+let s:darkblue    = [s:darkbluehex, 26]
+let s:darkmagenta = [s:darkmagentahex, 128]
+let s:darkred     = [s:darkredhex, 160]
+let s:lightyellow  = [s:lightyellowhex, 214]
+let s:lightgreen   = [s:lightgreenhex, 106]
+let s:lightcyan    = [s:lightcyanhex, 37]
+let s:lightblue    = [s:lightbluehex, 74]
+let s:lightmagenta = [s:lightmagentahex, 134]
+let s:lightred     = [s:lightredhex, 166]
 
 if &background == "light"
   let s:yellow  = s:darkyellow 
