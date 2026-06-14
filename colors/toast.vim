@@ -1,8 +1,8 @@
 " Vim color file Toast
 " Maintainer: [jsit] <jay@jaysitter.com>
-" Last Change: 2020 Oct 26
+" Last Change: 2026 Jun 14
 " URL: https://github.com/jsit/toast.vim
-" Version: 0.2.4
+" Version: 0.2.5
 " Description: Toast! A colorful, medium-contrast theme with full Vim and Neovim
 " support, true color and 256-color support, and automatic light and dark
 " variants. Easy to read without frying your retinae.
@@ -298,20 +298,20 @@ call s:hl("WildMenu", s:green, s:grayone)
 call s:hl("Comment", s:graymid, "")
 
 call s:hl("Constant", s:constant)
-hi link String Constant
+hi! link String Constant " https://github.com/neovim/neovim/issues/4549
 hi link Character Constant
 hi link Number Constant
 hi link Boolean Constant
 hi link Float Constant
 
 call s:hl("Identifier", s:identifier, [], "NONE")
-hi link Function Identifier
+hi! link Function Identifier " https://github.com/neovim/neovim/issues/4549
 
 call s:hl("Statement", s:statement, "", "NONE")
 hi link Conditional Statement
 hi link Repeat Statement
 hi link Label Statement
-hi link Operator Statement
+hi! link Operator Statement " https://github.com/neovim/neovim/issues/4549
 hi link Keyword Statement
 hi link Exception Statement
 
@@ -329,7 +329,7 @@ hi link Typedef Type
 call s:hl("Special", s:special)
 hi link SpecialChar Special
 hi link Tag Special
-hi link Delimiter Special
+hi! link Delimiter Special " https://github.com/neovim/neovim/issues/4549
 hi link SpecialComment Special
 hi link Debug Special
 
