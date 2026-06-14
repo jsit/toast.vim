@@ -169,7 +169,7 @@ endif
 
 let s:truered     = s:red
 let s:truegreen   = s:green
-let s:trueyellow  = ["#ffc233", 214]
+let s:trueyellow  = s:lightyellow
 let s:trueblue    = s:blue
 let s:truemagenta = s:magenta
 let s:truecyan    = s:cyan
