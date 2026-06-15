@@ -138,15 +138,15 @@ else
   let g:terminal_ansi_colors[14] = s:lightcyanhex
 
   if &background == "light"
-    let g:terminal_ansi_colors[0]  = "#323434"
-    let g:terminal_ansi_colors[7]  = "#e4e2d8"
-    let g:terminal_ansi_colors[8]  = "#4f4a36"
-    let g:terminal_ansi_colors[15] = "#f4f3ef"
+    let g:terminal_ansi_colors[0]  = s:lightblackhex
+    let g:terminal_ansi_colors[7]  = s:lightmediumlightgrayhex
+    let g:terminal_ansi_colors[8]  = s:lightmediumdarkgrayhex
+    let g:terminal_ansi_colors[15] = s:lightwhitehex
   else " &background == 'dark'
-    let g:terminal_ansi_colors[0]  = "#1e2d38"
-    let g:terminal_ansi_colors[7]  = "#acc1d3"
-    let g:terminal_ansi_colors[8]  = "#253846"
-    let g:terminal_ansi_colors[15] = "#b9cbda"
+    let g:terminal_ansi_colors[0]  = s:darkdarkgrayhex
+    let g:terminal_ansi_colors[7]  = s:darkmediumlightgrayhex
+    let g:terminal_ansi_colors[8]  = s:darkmediumdarkgrayhex
+    let g:terminal_ansi_colors[15] = s:darklightgrayhex
   endif
 endif
 " }}}
