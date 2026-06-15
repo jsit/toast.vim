@@ -13,7 +13,7 @@
 "
 " - All text has (or should have) a contrast ratio of at least 3:1, meeting WCAG
 "   level A. (Level AA across the board makes the colors too drab for my taste,
-"   but there will be an option for this in the future, because a11y is
+"   but there will be an option for this in the future, because accessibility is
 "   important.)
 " - All hues are multiples of 15 degrees apart on the color wheel, because why
 "   not.
@@ -25,31 +25,31 @@
 
 " Grays {{{
 
-let s:lightwhitehex           = "#f4f3ef"
-let s:lightlightgrayhex       = "#eae8e1"
-let s:lightmediumlightgrayhex = "#e4e2d8"
-let s:lightmediumgrayhex      = "#7f7757"
-let s:lightmediumdarkgrayhex  = "#4f4a36"
-let s:lightdarkgrayhex        = "#423e2e"
-let s:lightblackhex           = "#323434"
+let s:lightwhitehex           = "#f5f3f0"
+let s:lightlightgrayhex       = "#eceae7"
+let s:lightmediumlightgrayhex = "#e3e1dd"
+let s:lightmediumgrayhex      = "#848689"
+let s:lightmediumdarkgrayhex  = "#444340"
+let s:lightdarkgrayhex        = "#23211f"
+let s:lightblackhex           = "#1f1e1c"
 
-let s:darkwhitehex            = "#c3d2df"
-let s:darklightgrayhex        = "#b9cbda"
-let s:darkmediumlightgrayhex  = "#acc1d3"
-let s:darkmediumgrayhex       = "#547d9c"
-let s:darkmediumdarkgrayhex   = "#253846"
-let s:darkdarkgrayhex         = "#1e2d38"
-let s:darkblackhex            = "#17222b"
+let s:darkwhitehex            = "#d4d6d9"
+let s:darklightgrayhex        = "#cdcfd2"
+let s:darkmediumlightgrayhex  = "#b0b2b5"
+let s:darkmediumgrayhex       = "#848689"
+let s:darkmediumdarkgrayhex   = "#414346"
+let s:darkdarkgrayhex         = "#202224"
+let s:darkblackhex            = "#1d1e21"
 
 if &background == "light"
-  let s:white = [s:lightwhitehex, 231]
-  let s:black = [s:lightblackhex, 16]
+  let s:white = [s:lightwhitehex, 255]
+  let s:black = [s:lightblackhex, 234]
 
-  let s:lightgray       = [s:lightlightgrayhex, 188]
-  let s:mediumlightgray = [s:lightmediumlightgrayhex, 188]
-  let s:mediumgray      = [s:lightmediumgrayhex, 101]
-  let s:mediumdarkgray  = [s:lightmediumdarkgrayhex, 52]
-  let s:darkgray        = [s:lightdarkgrayhex, 16]
+  let s:lightgray       = [s:lightlightgrayhex, 254]
+  let s:mediumlightgray = [s:lightmediumlightgrayhex, 253]
+  let s:mediumgray      = [s:lightmediumgrayhex, 102]
+  let s:mediumdarkgray  = [s:lightmediumdarkgrayhex, 238]
+  let s:darkgray        = [s:lightdarkgrayhex, 235]
 
   let s:grayone=s:lightgray
   let s:graytwo=s:mediumlightgray
@@ -62,10 +62,10 @@ else " &background == 'dark'
   let s:white = [s:darkwhitehex, 188]
   let s:black = [s:darkblackhex, 234]
 
-  let s:lightgray       = [s:darklightgrayhex, 152]
-  let s:mediumlightgray = [s:darkmediumlightgrayhex, 146]
-  let s:mediumgray      = [s:darkmediumgrayhex, 242]
-  let s:mediumdarkgray  = [s:darkmediumdarkgrayhex, 236]
+  let s:lightgray       = [s:darklightgrayhex, 252]
+  let s:mediumlightgray = [s:darkmediumlightgrayhex, 249]
+  let s:mediumgray      = [s:darkmediumgrayhex, 102]
+  let s:mediumdarkgray  = [s:darkmediumdarkgrayhex, 238]
   let s:darkgray        = [s:darkdarkgrayhex, 235]
 
   let s:grayone=s:darkgray
@@ -83,18 +83,18 @@ let s:graymid=s:mediumgray
 
 " Colors {{{
 
-let s:darkredhex     = "#D12D00"
-let s:darkyellowhex  = "#B68200"
-let s:darkgreenhex   = "#427B00"
-let s:darkbluehex    = "#006fd1"
-let s:darkmagentahex = "#a53bce"
-let s:darkcyanhex    = "#119c97"
-let s:lightredhex     = "#E74D23"
-let s:lightyellowhex  = "#ffc233"
-let s:lightgreenhex   = "#7dc030"
-let s:lightbluehex    = "#5aa2e0"
-let s:lightmagentahex = "#b968d9"
-let s:lightcyanhex    = "#15c1bb"
+let s:darkredhex     = "#cd2a00"
+let s:darkgreenhex   = "#437a00"
+let s:darkyellowhex  = "#926600"
+let s:darkbluehex    = "#2566cd"
+let s:darkmagentahex = "#ab34c2"
+let s:darkcyanhex    = "#007c66"
+let s:lightredhex     = "#eb502b"
+let s:lightgreenhex   = "#79c237"
+let s:lightyellowhex  = "#ffc334"
+let s:lightbluehex    = "#709ce4"
+let s:lightmagentahex = "#be64d1"
+let s:lightcyanhex    = "#35c1a3"
 
 " Terminal Colors {{{
 if has('nvim')
@@ -152,16 +152,16 @@ endif
 " }}}
 
 let s:darkyellow  = [s:darkyellowhex, 136]
-let s:darkgreen   = [s:darkgreenhex, 28]
+let s:darkgreen   = [s:darkgreenhex, 64]
 let s:darkcyan    = [s:darkcyanhex, 36]
-let s:darkblue    = [s:darkbluehex, 26]
-let s:darkmagenta = [s:darkmagentahex, 128]
+let s:darkblue    = [s:darkbluehex, 31]
+let s:darkmagenta = [s:darkmagentahex, 133]
 let s:darkred     = [s:darkredhex, 160]
-let s:lightyellow  = [s:lightyellowhex, 214]
-let s:lightgreen   = [s:lightgreenhex, 106]
-let s:lightcyan    = [s:lightcyanhex, 37]
-let s:lightblue    = [s:lightbluehex, 74]
-let s:lightmagenta = [s:lightmagentahex, 134]
+let s:lightyellow  = [s:lightyellowhex, 221]
+let s:lightgreen   = [s:lightgreenhex, 107]
+let s:lightcyan    = [s:lightcyanhex, 73]
+let s:lightblue    = [s:lightbluehex, 38]
+let s:lightmagenta = [s:lightmagentahex, 170]
 let s:lightred     = [s:lightredhex, 166]
 
 if &background == "light"
@@ -288,6 +288,7 @@ call s:hl("InfoPopup", s:fg, s:grayone)
 call s:hl("MoreMsg", s:green)
 call s:hl("NonText", s:graytwo)
 call s:hl("Normal", s:fg, s:bg)
+call s:hl("NormalFloat", s:fg, s:grayone)
 call s:hl("NvimInternalError", s:red, s:red)
 call s:hl("PMenu", s:graymid, s:grayone)
 call s:hl("PMenuSbar", s:fg, s:grayone)
@@ -303,8 +304,8 @@ call s:hl("SpellBad", s:truered, s:white, "reverse")
 call s:hl("SpellCap", s:truered, s:white, "reverse")
 call s:hl("SpellLocal", s:truered, s:white, "reverse")
 call s:hl("SpellRare", s:truered, s:white, "reverse")
-call s:hl("StatusLine", s:graymid, s:grayone, "reverse")
-call s:hl("StatusLineNC", s:grayone, s:graymid, "reverse,underline")
+call s:hl("StatusLine", s:graytwo, s:graymid, "reverse")
+call s:hl("StatusLineNC", s:grayone, s:graymid, "reverse")
 call s:hl("StatusLineTerm", s:green, s:none, "reverse")
 call s:hl("StatusLineTermNC", s:green, s:none, "reverse")
 call s:hl("TabLine", s:graymid, s:grayone)
